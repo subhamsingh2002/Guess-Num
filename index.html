@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+
+    <link rel="icon" type="image/x-icon" href="./logo2.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Oxygen&family=Prompt:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="pageload()">
+
+    <main>
+        <div class="main-content" id="main">
+
+            <div class="heading" id="hd">
+                <h3>Guess <span>Num</span></h3>
+                <p> Guess any number between <strong>1 to 100</strong></p>
+            </div>
+
+            <div class="image">
+                <img src="./undraw_game_day_ucx9.svg" alt="">
+            </div>
+
+            <div class="game-modes">
+                <p>Choose Your Difficulty Level</p>
+                <button class="btn" id="easy"> Easy : 10 attempts </button>
+                <button class="btn" id="hard"> Hard : 5 attempts </button>
+                <button class="btn" id="extreme"> Extreme : 3 attempts </button>
+            </div>
+
+        </div>
+
+        <!-- --*** New Game Section ***--- -->
+        <div class="gameSection" id="game">
+
+            <div class="newGame">
+                <button class="btn" id="newGame"> New Game <span class="fas fa-angle-double-right"></span></button>
+            </div>
+
+            <div class="numberInputSection" id="inputSection">
+                <h3 id="gameHeading">Your Guess</h3>
+                <input type="number" min="1" max="100" id="inputBox" placeholder="Enter your guess number">
+            </div>
+
+            <div class="myStats">
+
+                <div class="attemptCount stat" id="attemptSection">
+                    <p>Number of Attempts : </p>
+                    <span id="attempts"> 0 </span>
+                </div>
+
+                <div class="prevGuess" id="guessSection">
+                    <p>Previous Guesses : </p>
+                    <span id="guesses"> 0 </span>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
